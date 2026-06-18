@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Successful</title>
+
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:linear-gradient(to right,#36d1dc,#5b86e5);
+            font-family:Arial,sans-serif;
+        }
+
+        .success-box{
+            text-align:center;
+            background:white;
+            padding:30px;
+            border-radius:15px;
+        }
+
+        .tick{
+            width:100px;
+            height:100px;
+            line-height:100px;
+            border-radius:50%;
+            background:limegreen;
+            color:white;
+            font-size:60px;
+            margin:auto;
+            animation:pop 0.8s ease;
+        }
+
+        @keyframes pop{
+            0%{
+                transform:scale(0);
+            }
+            100%{
+                transform:scale(1);
+            }
+        }
+
+        h2{
+            color:green;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="success-box">
+        <div class="tick">✓</div>
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your purchase.</p>
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+
+</body>
+</html>

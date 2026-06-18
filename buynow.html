@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proceed to Payment</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .payment-box{
+            background:white;
+            width:350px;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color:#5b86e5;
+            margin-bottom:20px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .btn{
+            width:100%;
+            padding:12px;
+            background:#36d1dc;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#5b86e5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="payment-box">
+        <h2>Proceed to Payment</h2>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="text" placeholder="Card Number" required>
+
+            <input type="text" placeholder="Expiry Date (MM/YY)" required>
+
+            <input type="password" placeholder="CVV" required>
+
+            <a href="tick.html"><button>Pay Now</button></a>
+    
+    </div>
+
+</body>
+</html>

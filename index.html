@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Store</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#f4f4f4;
+    }
+
+    header{
+        background:#0a7d32;
+        color:white;
+        padding:20px;
+        text-align:center;
+    }
+
+    nav{
+        background:#055a23;
+        padding:10px;
+        text-align:center;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:0 15px;
+        font-weight:bold;
+    }
+
+    .hero{
+        height:400px;
+        background:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200')
+        center/cover;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:3rem;
+        background:rgba(0,0,0,0.5);
+        padding:15px;
+        border-radius:10px;
+    }
+
+    .products{
+        padding:40px;
+        text-align:center;
+    }
+
+    .products h2{
+        margin-bottom:30px;
+        color:#0a7d32;
+    }
+
+    .product-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+    }
+
+    .card{
+        background:white;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .card h3{
+        margin:15px 0;
+    }
+
+    .price{
+        color:#0a7d32;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .btn{
+        display:inline-block;
+        margin:15px;
+        padding:10px 20px;
+        background:#0a7d32;
+        color:white;
+        text-decoration:none;
+        border-radius:5px;
+    }
+
+    footer{
+        background:#222;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>⚽ Football Store</h1>
+    <p>Your One-Stop Shop for Football Gear</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Jerseys</a>
+    <a href="#">Boots</a>
+    <a href="#">Balls</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Get Ready For The Game!</h1>
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=500" alt="Football">
+            <h3>Professional Football</h3>
+            <p class="price">$29.99</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=500" alt="Football Boots">
+            <h3>Football Boots</h3>
+            <p class="price">$89.99</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=500" alt="Jersey">
+            <h3>Team Jersey</h3>
+            <p class="price">$49.99</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Football Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
